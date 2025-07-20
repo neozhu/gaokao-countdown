@@ -1,8 +1,7 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import { useTheme } from 'next-themes';
-import { Moon, Sun, Heart } from 'lucide-react';
+import { Heart, Github } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface SiteFooterProps {
@@ -10,8 +9,6 @@ interface SiteFooterProps {
 }
 
 export function SiteFooter({ className }: SiteFooterProps) {
-  const { theme, setTheme } = useTheme();
-
   return (
     <motion.footer
       initial={{ y: 20, opacity: 0 }}
@@ -38,7 +35,25 @@ export function SiteFooter({ className }: SiteFooterProps) {
           <span>Next.js + Tailwind</span>
         </div>
 
-       
+        {/* GitHub 链接 */}
+        <div className="flex items-center gap-2">
+          <Button
+            variant="ghost"
+            size="sm"
+            asChild
+            className="h-8 px-2 text-muted-foreground hover:text-foreground"
+          >
+            <a
+              href="https://github.com/neozhu/gaokao-countdown"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1"
+            >
+              <Github className="w-4 h-4" />
+              <span className="hidden sm:inline text-xs">源代码</span>
+            </a>
+          </Button>
+        </div>
       </div>
 
       {/* 移动端额外信息 */}

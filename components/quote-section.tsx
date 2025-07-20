@@ -1,7 +1,6 @@
 'use client';
 
 import { useQuote } from '@/hooks/use-quote';
-import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { RefreshCw, Quote } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -15,7 +14,7 @@ export function QuoteSection({ className }: QuoteSectionProps) {
 
   if (error) {
     return (
-      <Card className={`p-6 glass-card ${className}`}>
+      <div className={`p-6 glass-card rounded-xl ${className}`}>
         <div className="text-center text-muted-foreground">
           <div className="text-red-500 mb-2">获取语录失败</div>
           <Button 
@@ -27,12 +26,12 @@ export function QuoteSection({ className }: QuoteSectionProps) {
             重试
           </Button>
         </div>
-      </Card>
+      </div>
     );
   }
 
   return (
-    <Card className={`p-6 glass-card ${className}`}>
+    <div className={`p-6 glass-card rounded-xl ${className}`}>
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -97,6 +96,6 @@ export function QuoteSection({ className }: QuoteSectionProps) {
           </div>
         )}
       </motion.div>
-    </Card>
+    </div>
   );
 }

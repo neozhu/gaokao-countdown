@@ -15,6 +15,7 @@ export function PWAInstall({ className }: PWAInstallProps) {
   const { isInstallable, isInstalled, isOnline, promptInstall } = usePWA();
   const [showDialog, setShowDialog] = useState(false);
   const [isInstalling, setIsInstalling] = useState(false);
+  const [showManualInstall, setShowManualInstall] = useState(false);
 
   const handleInstall = async () => {
     setIsInstalling(true);
@@ -47,23 +48,26 @@ export function PWAInstall({ className }: PWAInstallProps) {
     );
   }
 
-  // 如果不支持安装，不显示组件
-  if (!isInstallable) {
-    return null;
-  }
-
+  // 始终显示安装按钮，提供手动安装指引
   return (
     <>
       <Button
         variant="outline"
         size="sm"
-        onClick={() => setShowDialog(true)}
+        onClick={() => {
+          if (isInstallable) {
+            setShowDialog(true);
+          } else {
+            setShowManualInstall(true);
+          }
+        }}
         className={`gap-2 ${className}`}
       >
         <Download className="h-4 w-4" />
-        安装应用
+        {isInstallable ? '安装应用' : '安装指南'}
       </Button>
 
+      {/* 自动安装对话框 */}
       <Dialog open={showDialog} onOpenChange={setShowDialog}>
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
@@ -160,6 +164,78 @@ export function PWAInstall({ className }: PWAInstallProps) {
             >
               <Download className="h-4 w-4 mr-2" />
               {isInstalling ? '安装中...' : '立即安装'}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* 手动安装指南对话框 */}
+      <Dialog open={showManualInstall} onOpenChange={setShowManualInstall}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2">
+              <Download className="h-5 w-5" />
+              PWA安装指南
+            </DialogTitle>
+            <DialogDescription>
+              按照以下步骤手动安装应用到您的设备
+            </DialogDescription>
+          </DialogHeader>
+
+          <div className="space-y-4">
+            <div className="text-sm space-y-3">
+              <div className="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                <h4 className="font-medium text-blue-900 dark:text-blue-100 mb-2">
+                  🖥️ 桌面浏览器 (Chrome/Edge)
+                </h4>
+                <ol className="list-decimal list-inside space-y-1 text-blue-800 dark:text-blue-200 text-xs">
+                  <li>点击地址栏右侧的安装图标 📲</li>
+                  <li>或点击浏览器菜单 → &ldquo;安装高考倒计时&rdquo;</li>
+                  <li>确认安装即可添加到桌面</li>
+                </ol>
+              </div>
+
+              <div className="p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
+                <h4 className="font-medium text-green-900 dark:text-green-100 mb-2">
+                  📱 Android (Chrome)
+                </h4>
+                <ol className="list-decimal list-inside space-y-1 text-green-800 dark:text-green-200 text-xs">
+                  <li>点击浏览器菜单 (⋮)</li>
+                  <li>选择&ldquo;添加到主屏幕&rdquo;</li>
+                  <li>确认安装到桌面</li>
+                </ol>
+              </div>
+
+              <div className="p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
+                <h4 className="font-medium text-purple-900 dark:text-purple-100 mb-2">
+                  🍎 iOS (Safari)
+                </h4>
+                <ol className="list-decimal list-inside space-y-1 text-purple-800 dark:text-purple-200 text-xs">
+                  <li>点击底部分享按钮 📤</li>
+                  <li>选择&ldquo;添加到主屏幕&rdquo;</li>
+                  <li>确认添加即可</li>
+                </ol>
+              </div>
+            </div>
+
+            <div className="text-xs text-muted-foreground">
+              <p className="font-medium mb-1">安装后的优势：</p>
+              <ul className="list-disc list-inside space-y-0.5 ml-2">
+                <li>独立应用窗口，更专注的学习体验</li>
+                <li>离线使用，无网络时也能查看倒计时</li>
+                <li>快速启动，一键从桌面打开</li>
+                <li>推送通知，重要提醒不错过</li>
+              </ul>
+            </div>
+          </div>
+
+          <DialogFooter>
+            <Button
+              variant="outline"
+              onClick={() => setShowManualInstall(false)}
+              className="w-full"
+            >
+              我知道了
             </Button>
           </DialogFooter>
         </DialogContent>

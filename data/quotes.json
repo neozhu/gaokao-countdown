@@ -390,21 +390,21 @@
     "id": 70
   },
   {
-    "chinese": "点燃梦想，让梦想闪耀；梦想相伴，成功自来。",
-    "english": "Ignite dreams and let dreams shine; with dreams at your side, success will follow.",
-    "category": "initiative",
+    "chinese": "未来属于那些相信梦想之美的人。",
+"english": "The future belongs to those who believe in the beauty of their dreams.",
+    "category": "dreams",
     "id": 71
   },
   {
-    "chinese": "书写希望，让光芒闪耀；希望相伴，成功自来。",
-    "english": "Write hope and let light shine; with hope at your side, success will follow.",
-    "category": "strength",
+    "chinese": "让你的快乐，点亮你周围的世界。",
+"english": "Let your joy be a source of light to the world around you.",
+"category": "joy",
     "id": 72
   },
   {
-    "chinese": "雕刻信念，让潜能闪耀；信念相伴，成功自来。",
-    "english": "Carve faith and let potential shine; with faith at your side, success will follow.",
-    "category": "time",
+    "chinese": "热情是驱动你走向成功的引擎。",
+"english": "Passion is the engine that drives you to success.",
+"category": "passion",
     "id": 73
   },
   {
@@ -484,12 +484,6 @@
 "english": "It takes more than one cold day for a river to freeze three feet deep.",
 "category": "perseverance",
     "id": 99
-  },
-  {
-    "chinese": "生当作人杰，死亦为鬼雄。",
-    "english": "Alive, be a hero among men; dead, be a hero among spirits.",
-    "category": "classic-poetry",
-    "id": 100
   },
   {
     "chinese": "不畏浮云遮望眼，自缘身在最高层。",

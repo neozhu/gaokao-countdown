@@ -84,7 +84,7 @@ export function DatePicker({ onDateChange, className }: DatePickerProps) {
   const currentDate = new Date(examDateString);
 
   return (
-    <Card className={`p-6 glass-card ${className}`}>
+    <Card className={`p-6 glass-card-light ${className}`}>
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

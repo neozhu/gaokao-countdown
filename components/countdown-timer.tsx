@@ -23,7 +23,7 @@ export function CountdownTimer({ targetDate, className }: CountdownTimerProps) {
   // 在组件挂载前显示占位符，避免水合不匹配
   if (!isMounted) {
     return (
-      <Card className={`p-8 text-center glass-card ${className}`}>
+      <Card className={`p-8 text-center glass-card-strong ${className}`}>
         <motion.div
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -52,7 +52,7 @@ export function CountdownTimer({ targetDate, className }: CountdownTimerProps) {
 
   if (countdownData.isExpired) {
     return (
-      <Card className={`p-8 text-center glass-card ${className}`}>
+      <Card className={`p-8 text-center glass-card-strong ${className}`}>
         <motion.div
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -70,7 +70,7 @@ export function CountdownTimer({ targetDate, className }: CountdownTimerProps) {
   }
 
   return (
-    <Card className={`p-8 text-center glass-card ${className}`}>
+    <Card className={`p-8 text-center glass-card-strong ${className}`}>
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}

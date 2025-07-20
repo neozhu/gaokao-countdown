@@ -1,16 +1,63 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 
 interface BackgroundProps {
   className?: string;
 }
 
 export function Background({ className }: BackgroundProps) {
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // 检测是否为移动设备
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    // 预加载背景图片
+    const img = new Image();
+    img.onload = () => setImageLoaded(true);
+    img.src = '/bg.png';
+
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   return (
     <div className={`fixed inset-0 -z-10 overflow-hidden ${className}`}>
-      {/* 主背景渐变 */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-blue-900/20 dark:to-purple-900/20" />
+      {/* 背景图片层 */}
+      <motion.div 
+        initial={{ opacity: 0, scale: 1.05 }}
+        animate={{ 
+          opacity: imageLoaded ? 1 : 0, 
+          scale: 1 
+        }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/bg.png)',
+          backgroundAttachment: isMobile ? 'scroll' : 'fixed',
+        }}
+      />
+      
+      {/* 备用渐变背景 - 图片加载前显示 */}
+      <motion.div 
+        initial={{ opacity: 1 }}
+        animate={{ opacity: imageLoaded ? 0 : 1 }}
+        transition={{ duration: 1 }}
+        className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-blue-900/20 dark:to-purple-900/20"
+      />
+      
+      {/* 背景图片遮罩层 - 确保内容可读性 */}
+      <div className="absolute inset-0 bg-white/50 dark:bg-black/40" />
+      
+      {/* 渐变叠加层 - 增强视觉效果 */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-white/20 dark:via-black/5 dark:to-black/20" />
       
       {/* 山景 SVG 背景 */}
       <motion.div

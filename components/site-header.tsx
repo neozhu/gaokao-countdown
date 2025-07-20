@@ -9,7 +9,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Settings, Info, Globe, Moon, Sun, CalendarIcon } from 'lucide-react';
+import { Settings, Info, Globe, Moon, Sun, CalendarIcon, Github } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { motion } from 'framer-motion';
 import { SettingsDialog } from '@/components/settings-dialog';
@@ -57,60 +57,92 @@ export function SiteHeader({ className, examDate, onDateChange }: SiteHeaderProp
       </div>
 
       {/* 设置菜单 */}
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button variant="ghost" size="sm" className="h-10 w-10 p-0">
-            <Settings className="w-5 h-5" />
-          </Button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent align="end" className="w-48">
-          {/* 考试日期设置 */}
-          <DropdownMenuItem 
-            onClick={() => setSettingsOpen(true)}
-            className="flex items-center gap-2"
+      <div className="flex items-center gap-2">
+        {/* GitHub 链接 */}
+        <Button
+          variant="ghost"
+          size="sm"
+          asChild
+          className="h-10 w-10 p-0 text-muted-foreground hover:text-foreground"
+        >
+          <a
+            href="https://github.com/neozhu/gaokao-countdown"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <CalendarIcon className="w-4 h-4" />
-            <span>考试日期设置</span>
-          </DropdownMenuItem>
+            <Github className="w-5 h-5" />
+          </a>
+        </Button>
 
-          <DropdownMenuSeparator />
+        {/* 设置下拉菜单 */}
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="ghost" size="sm" className="h-10 w-10 p-0">
+              <Settings className="w-5 h-5" />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end" className="w-48">
+            {/* 考试日期设置 */}
+            <DropdownMenuItem 
+              onClick={() => setSettingsOpen(true)}
+              className="flex items-center gap-2"
+            >
+              <CalendarIcon className="w-4 h-4" />
+              <span>考试日期设置</span>
+            </DropdownMenuItem>
 
-          {/* 主题切换 */}
-          <DropdownMenuItem 
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className="flex items-center gap-2"
-          >
-            {theme === 'dark' ? (
-              <>
-                <Sun className="w-4 h-4" />
-                <span>浅色主题</span>
-              </>
-            ) : (
-              <>
-                <Moon className="w-4 h-4" />
-                <span>深色主题</span>
-              </>
-            )}
-          </DropdownMenuItem>
+            <DropdownMenuSeparator />
 
-          {/* 语言切换 */}
-          <DropdownMenuItem 
-            onClick={toggleLanguage}
-            className="flex items-center gap-2"
-          >
-            <Globe className="w-4 h-4" />
-            <span>{language === 'zh' ? 'English' : '中文'}</span>
-          </DropdownMenuItem>
+            {/* 主题切换 */}
+            <DropdownMenuItem 
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              className="flex items-center gap-2"
+            >
+              {theme === 'dark' ? (
+                <>
+                  <Sun className="w-4 h-4" />
+                  <span>浅色主题</span>
+                </>
+              ) : (
+                <>
+                  <Moon className="w-4 h-4" />
+                  <span>深色主题</span>
+                </>
+              )}
+            </DropdownMenuItem>
 
-          <DropdownMenuSeparator />
+            {/* 语言切换 */}
+            <DropdownMenuItem 
+              onClick={toggleLanguage}
+              className="flex items-center gap-2"
+            >
+              <Globe className="w-4 h-4" />
+              <span>{language === 'zh' ? 'English' : '中文'}</span>
+            </DropdownMenuItem>
 
-          {/* 关于 */}
-          <DropdownMenuItem className="flex items-center gap-2">
-            <Info className="w-4 h-4" />
-            <span>关于应用</span>
-          </DropdownMenuItem>
-        </DropdownMenuContent>
-      </DropdownMenu>
+            <DropdownMenuSeparator />
+
+            {/* GitHub 仓库 */}
+            <DropdownMenuItem asChild>
+              <a
+                href="https://github.com/neozhu/gaokao-countdown"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <Github className="w-4 h-4" />
+                <span>GitHub 仓库</span>
+              </a>
+            </DropdownMenuItem>
+
+            {/* 关于 */}
+            <DropdownMenuItem className="flex items-center gap-2">
+              <Info className="w-4 h-4" />
+              <span>关于应用</span>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
 
       {/* 设置对话框 */}
       {examDate && onDateChange && (

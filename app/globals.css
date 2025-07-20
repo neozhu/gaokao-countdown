@@ -121,19 +121,100 @@
   }
 }
 
-/* Glassmorphism 效果 */
+/* Glassmorphism 效果 - 现代浏览器专用 */
 .glass-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgba(255, 255, 255, 0.05) ;
+  backdrop-filter: blur(10px) saturate(180%) ;
+  border: 1px solid rgba(255, 255, 255, 0.2) ;
+  box-shadow: 
+    0 8px 32px 0 rgba(31, 38, 135, 0.3),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.4) ;
+  position: relative;
 }
 
 .dark .glass-card {
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  background: rgba(0, 0, 0, 0.1) ;
+  backdrop-filter: blur(10px) saturate(180%) ;
+  border: 1px solid rgba(255, 255, 255, 0.1) ;
+  box-shadow: 
+    0 8px 32px 0 rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.1) ;
+}
+
+/* 强毛玻璃效果 - 用于主要卡片 */
+.glass-card-strong {
+  background: rgba(255, 255, 255, 0.08) ;
+  backdrop-filter: blur(15px) saturate(200%) ;
+  border: 1px solid rgba(255, 255, 255, 0.3) ;
+  box-shadow: 
+    0 12px 40px 0 rgba(31, 38, 135, 0.4),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.5) ;
+  position: relative;
+}
+
+.dark .glass-card-strong {
+  background: rgba(0, 0, 0, 0.15) ;
+  backdrop-filter: blur(15px) saturate(180%) ;
+  border: 1px solid rgba(255, 255, 255, 0.15) ;
+  box-shadow: 
+    0 12px 40px 0 rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.1) ;
+}
+
+/* 轻微毛玻璃效果 - 用于次要元素 */
+.glass-card-light {
+  background: rgba(255, 255, 255, 0.12) ;
+  backdrop-filter: blur(6px) saturate(150%) ;
+  border: 1px solid rgba(255, 255, 255, 0.25) ;
+  box-shadow: 
+    0 6px 24px 0 rgba(31, 38, 135, 0.2),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.3) ;
+  position: relative;
+}
+
+.dark .glass-card-light {
+  background: rgba(0, 0, 0, 0.2) ;
+  backdrop-filter: blur(6px) saturate(130%) ;
+  border: 1px solid rgba(255, 255, 255, 0.12) ;
+  box-shadow: 
+    0 6px 24px 0 rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.08) ;
+}
+
+/* 背景图片优化 */
+.bg-image-container {
+  position: relative;
+}
+
+.bg-image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+/* 移动端背景优化 */
+@media (max-width: 768px) {
+  .bg-image-container::before {
+    background-attachment: scroll; /* 移动端禁用fixed避免问题 */
+  }
+}
+
+/* 确保背景图片在所有设备上都有良好的显示效果 */
+@media (max-width: 480px) {
+  .bg-image-container::before {
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 /* 自定义滚动条 */

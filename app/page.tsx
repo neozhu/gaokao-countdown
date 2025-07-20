@@ -11,6 +11,7 @@ import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { Background } from '@/components/background';
 import { ClientOnly } from '@/components/client-only';
+import { SWRegister } from '@/components/sw-register';
 import examDatesData from '@/data/exam-dates.json';
 
 export default function Home() {
@@ -39,6 +40,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {/* Service Worker 注册 */}
+      <SWRegister />
+      
       {/* 背景 */}
       <Background />
       
@@ -55,7 +59,7 @@ export default function Home() {
         {/* 倒计时组件 */}
         <ClientOnly
           fallback={
-            <div className="w-full p-8 text-center glass-card">
+            <div className="w-full p-8 text-center glass-card-strong">
               <div className="text-7xl md:text-9xl font-bold text-primary">
                 --
               </div>
@@ -103,7 +107,7 @@ export default function Home() {
         {/* 励志语录 */}
         <QuoteSection className="w-full" />
         
-        {/* 分享功能按钮组 */}
+        {/* 分享功能和PWA安装按钮组 */}
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
           <ShareDialog 
             examDate={examDate}
