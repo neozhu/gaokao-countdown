@@ -25,11 +25,11 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://gaokao-countdown.vercel.app'),
+  metadataBase: new URL('https://gaokao-countdown.blazorserver.com/'),
   openGraph: {
     title: "高考倒计时 - 为梦想而努力",
     description: "专为高考学生设计的倒计时应用，陪伴你走过备考的每一天。",
-    url: 'https://gaokao-countdown.vercel.app',
+    url: 'https://gaokao-countdown.blazorserver.com/',
     siteName: '高考倒计时',
     locale: 'zh_CN',
     type: 'website',
