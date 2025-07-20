@@ -1,0 +1,542 @@
+[
+  {
+    "chinese": "求知若饥，虚心若愚。",
+    "english": "Stay hungry, stay foolish.",
+    "category": "self-improvement",
+    "id": 1
+  },
+  {
+    "chinese": "实现明天理想的唯一障碍是今天的疑虑。",
+    "english": "The only limit to our realization of tomorrow is our doubts of today.",
+    "category": "hope",
+    "id": 2
+  },
+  {
+    "chinese": "成功不是终点，失败也并非末日，重要的是继续前进的勇气。",
+    "english": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+    "category": "perseverance",
+    "id": 3
+  },
+  {
+    "chinese": "相信自己能做到，你就已经成功了一半。",
+    "english": "Believe you can and you're halfway there.",
+    "category": "confidence",
+    "id": 4
+  },
+  {
+    "chinese": "敢想敢做，即使失败也无妨。",
+    "english": "Dream big and dare to fail.",
+    "category": "dreams",
+    "id": 5
+  },
+  {
+    "chinese": "行动是一切成功的基石。",
+    "english": "Action is the foundational key to all success.",
+    "category": "practice",
+    "id": 6
+  },
+  {
+    "chinese": "当天赋不够努力时，努力会击败天赋。",
+    "english": "Hard work beats talent when talent doesn't work hard.",
+    "category": "effort",
+    "id": 7
+  },
+  {
+    "chinese": "让每一天都成为你的杰作。",
+    "english": "Make each day your masterpiece.",
+    "category": "focus",
+    "id": 8
+  },
+  {
+    "chinese": "不要满足于平庸。",
+    "english": "Never settle for mediocrity.",
+    "category": "self-improvement",
+    "id": 9
+  },
+  {
+    "chinese": "有志者事竟成。",
+    "english": "Where there is a will, there is a way.",
+    "category": "determination",
+    "id": 10
+  },
+  {
+    "chinese": "专注于旅程，而非终点。",
+    "english": "Focus on the journey, not the destination.",
+    "category": "focus",
+    "id": 11
+  },
+  {
+    "chinese": "不吃苦中苦，难为人上人。",
+    "english": "No pain, no gain.",
+    "category": "effort",
+    "id": 12
+  },
+  {
+    "chinese": "知识就是力量。",
+    "english": "Knowledge is power.",
+    "category": "study",
+    "id": 13
+  },
+  {
+    "chinese": "失败乃成功之母。",
+    "english": "Failure is the mother of success.",
+    "category": "persistence",
+    "id": 14
+  },
+  {
+    "chinese": "机遇总偏爱勇者。",
+    "english": "Fortune favors the bold.",
+    "category": "courage",
+    "id": 15
+  },
+  {
+    "chinese": "每一次成就，都始于尝试的决定。",
+    "english": "Every accomplishment starts with the decision to try.",
+    "category": "initiative",
+    "id": 16
+  },
+  {
+    "chinese": "成功是每日小小努力的汇聚。",
+    "english": "Success is the sum of small efforts repeated day in and day out.",
+    "category": "effort",
+    "id": 17
+  },
+  {
+    "chinese": "将伤痛化作智慧。",
+    "english": "Turn your wounds into wisdom.",
+    "category": "wisdom",
+    "id": 18
+  },
+  {
+    "chinese": "杰出者有目标，平庸者只有愿望。",
+    "english": "Great minds have purposes; others have wishes.",
+    "category": "vision",
+    "id": 19
+  },
+  {
+    "chinese": "瞄准月亮，即使错过，也能落在星辰。",
+    "english": "Aim for the moon; even if you miss, you'll land among the stars.",
+    "category": "ambition",
+    "id": 20
+  },
+  {
+    "chinese": "你的未来由今天的行动决定，而非明天。",
+    "english": "Your future is created by what you do today, not tomorrow.",
+    "category": "practice",
+    "id": 21
+  },
+  {
+    "chinese": "自律是连接目标与成就的桥梁。",
+    "english": "Discipline is the bridge between goals and accomplishment.",
+    "category": "self-discipline",
+    "id": 22
+  },
+  {
+    "chinese": "力量不来自胜利，而在于奋斗锻造。",
+    "english": "Strength does not come from winning. Your struggles develop your strengths.",
+    "category": "strength",
+    "id": 23
+  },
+  {
+    "chinese": "积少成多，聚沙成塔。",
+    "english": "Little by little, a little becomes a lot.",
+    "category": "persistence",
+    "id": 24
+  },
+  {
+    "chinese": "勇气不是没有恐惧，而是战胜恐惧。",
+    "english": "Courage is not the absence of fear, but the triumph over it.",
+    "category": "courage",
+    "id": 25
+  },
+  {
+    "chinese": "不要等待铁热，再去锻打；要边打边将铁炼热。",
+    "english": "Do not wait to strike till the iron is hot; make it hot by striking.",
+    "category": "initiative",
+    "id": 26
+  },
+  {
+    "chinese": "我有一个梦想。",
+    "english": "I have a dream.",
+    "category": "aspiration",
+    "id": 27
+  },
+  {
+    "chinese": "熟能生巧。",
+    "english": "Practice makes perfect.",
+    "category": "practice",
+    "id": 28
+  },
+  {
+    "chinese": "卓越不是一次行动，而是一种习惯。",
+    "english": "Excellence is not an act, but a habit.",
+    "category": "excellence",
+    "id": 29
+  },
+  {
+    "chinese": "越努力，越幸运。",
+    "english": "The harder you work, the luckier you get.",
+    "category": "effort",
+    "id": 30
+  },
+  {
+    "chinese": "坚持者终将成功。",
+    "english": "Success belongs to the persevering.",
+    "category": "perseverance",
+    "id": 31
+  },
+  {
+    "chinese": "千里之行，始于足下。",
+    "english": "A journey of a thousand miles begins with a single step.",
+    "category": "persistence",
+    "id": 32
+  },
+  {
+    "chinese": "把握今天。",
+    "english": "Carpe diem.",
+    "category": "youth",
+    "id": 33
+  },
+  {
+    "chinese": "时不我待。",
+    "english": "Time waits for no one.",
+    "category": "time",
+    "id": 34
+  },
+  {
+    "chinese": "不出手，你将错过百分之百的机会。",
+    "english": "You miss 100% of the shots you don't take.",
+    "category": "opportunity",
+    "id": 35
+  },
+  {
+    "chinese": "质量从不是偶然，而是智慧与努力的结果。",
+    "english": "Quality is never an accident; it is always the result of intelligent effort.",
+    "category": "quality",
+    "id": 36
+  },
+  {
+    "chinese": "向星空进发。",
+    "english": "Shoot for the stars.",
+    "category": "ambition",
+    "id": 37
+  },
+  {
+    "chinese": "起身奋斗。",
+    "english": "Rise and grind.",
+    "category": "effort",
+    "id": 38
+  },
+  {
+    "chinese": "目光锁定目标。",
+    "english": "Eyes on the prize.",
+    "category": "focus",
+    "id": 39
+  },
+  {
+   "chinese": "面朝阳光，阴影自会落在身后。",
+"english": "Keep your face always toward the sunshine, and shadows will fall behind you.",
+"category": "optimism",
+    "id": 40
+  },
+  {
+    "chinese": "想象力比知识更重要。",
+"english": "Imagination is more important than knowledge.",
+"category": "creativity",
+    "id": 41
+  },
+  {
+    "chinese": "旅程的开始是思考，旅程的终点是行动。",
+"english": "The journey of a thousand miles begins with a single step.",
+"category": "action",
+    "id": 42
+  },
+    {
+        "chinese": "每一次失败都是成功的垫脚石。",
+        "english": "Every failure is a stepping stone to success.",
+        "category": "resilience",
+        "id": 43
+    },
+    {
+        "chinese": "不要害怕慢慢来，害怕的是停下来。",
+        "english": "Don't be afraid to go slow, be afraid of stopping.",
+        "category": "persistence",
+        "id": 44
+    },
+    {
+        "chinese": "成功的秘诀在于坚持自己的目标。",
+        "english": "The secret of success is to persist in pursuing your goals.",
+        "category": "determination",
+        "id": 45
+    },
+    {
+        "chinese": "梦想不会逃跑，逃跑的永远是自己。",
+        "english": "Dreams don't run away; it's you who runs away from them.",
+        "category": "dreams",
+        "id": 46
+    },
+    {
+        "chinese": "每一天都是新的开始。",
+        "english": "Every day is a new beginning.",
+        "category": "renewal",
+        "id": 47
+    },
+    {
+        "chinese": "不经历风雨，怎能见彩虹？",
+        "english": "Without experiencing the storm, how can you see the rainbow?",
+        "category": "hope",
+        "id": 48
+    },
+    {
+        "chinese": "生命不止，奋斗不息。",
+        "english": "Life goes on, and so does the struggle.",
+        "category": "perseverance",
+        "id": 49
+    },
+    {
+        "chinese": "成功是努力的结果，而不是偶然的幸运。",
+        "english": "Success is the result of hard work, not a stroke of luck.",
+        "category": "effort",
+        "id": 55
+    },
+    {
+        "chinese": "路虽远，行则将至。",
+        "english": "Though the road is long, you will arrive as long as you travel it.",
+        "category": "persistence",
+        "id": 56
+  },
+  {
+    "chinese": "不以山海为远，心之所向，无所不能。",
+    "english": "No mountain or sea is too far when the heart is set.",
+    "category": "ambition",
+    "id": 57
+  },
+  {
+    "chinese": "今日事，今日毕。",
+    "english": "Do today's work today.",
+    "category": "discipline",
+    "id": 58
+  },
+  {
+    "chinese": "星光不负赶路人，时光不负有心人。",
+    "english": "The stars favor the travelers, and time favors the determined.",
+    "category": "perseverance",
+    "id": 59
+  },
+  {
+    "chinese": "志之所趋，无远弗届。",
+    "english": "Where the will leads, no place is unreachable.",
+    "category": "determination",
+    "id": 60
+  },
+  {
+    "chinese": "滴水穿石，绳锯木断。",
+    "english": "Dripping water penetrates stone; rope sawing can cut wood.",
+    "category": "effort",
+    "id": 61
+  },
+  {
+    "chinese": "行胜于言。",
+    "english": "Action speaks louder than words.",
+    "category": "practice",
+    "id": 62
+  },
+  {
+    "chinese": "勤能补拙。",
+    "english": "Diligence can make up for lack of talent.",
+    "category": "effort",
+    "id": 63
+  },
+  {
+    "chinese": "我思故我在。",
+    "english": "I think, therefore I am.",
+    "category": "philosophy",
+    "id": 64
+  },
+  {
+    "chinese": "敢为天下先。",
+    "english": "Dare to be the first.",
+    "category": "courage",
+    "id": 65
+  },
+  {
+    "chinese": "心有多大，舞台就有多大。",
+    "english": "The bigger the heart, the larger the stage.",
+    "category": "vision",
+    "id": 66
+  },
+  {
+    "chinese": "无限风光在险峰。",
+    "english": "The best view comes after the hardest climb.",
+    "category": "challenge",
+    "id": 67
+  },
+  {
+    "chinese": "逆风飞翔，方显英雄本色。",
+    "english": "Fly against the wind to show heroic spirit.",
+    "category": "courage",
+    "id": 68
+  },
+  {
+    "chinese": "破茧成蝶。",
+    "english": "Break the cocoon to become a butterfly.",
+    "category": "growth",
+    "id": 69
+  },
+  {
+    "chinese": "敢于梦想，勇于实现。",
+    "english": "Dare to dream and brave to achieve.",
+    "category": "dreams",
+    "id": 70
+  },
+  {
+    "chinese": "点燃梦想，让梦想闪耀；梦想相伴，成功自来。",
+    "english": "Ignite dreams and let dreams shine; with dreams at your side, success will follow.",
+    "category": "initiative",
+    "id": 71
+  },
+  {
+    "chinese": "书写希望，让光芒闪耀；希望相伴，成功自来。",
+    "english": "Write hope and let light shine; with hope at your side, success will follow.",
+    "category": "strength",
+    "id": 72
+  },
+  {
+    "chinese": "雕刻信念，让潜能闪耀；信念相伴，成功自来。",
+    "english": "Carve faith and let potential shine; with faith at your side, success will follow.",
+    "category": "time",
+    "id": 73
+  },
+  {
+    "chinese": "去追求让你内心燃烧起来的东西。",
+"english": "Go after what it is that creates meaning in your life and then trust yourself to handle the stress that follows.",
+"category": "passion",
+    "id": 74
+  },
+  {
+    "chinese": "唯一真正的智慧在于知道自己一无所知。",
+"english": "The only true wisdom is in knowing you know nothing.",
+"category": "wisdom",
+    "id": 75
+  },
+  {
+    "chinese": "道可道，非常道；名可名，非常名。",
+"english": "The Tao that can be told is not the eternal Tao; the name that can be named is not the eternal name.",
+"category": "philosophy",
+    "id": 76
+  },
+  {
+    "chinese": "激活蓝图，让信心闪耀；蓝图相伴，成功自来。",
+    "english": "Activate blueprint and let confidence shine; with blueprint at your side, success will follow.",
+    "category": "confidence",
+    "id": 90
+  },
+  {
+    "chinese": "长风破浪会有时，直挂云帆济沧海。",
+    "english": "Sometime the winds and waves will rise; I'll set my cloudlike sail to cross the vast sea.",
+    "category": "classic-poetry",
+    "id": 91
+  },
+  {
+    "chinese": "会当凌绝顶，一览众山小。",
+    "english": "I shall climb to the summit, where all other peaks seem small beneath me.",
+    "category": "classic-poetry",
+    "id": 92
+  },
+  {
+    "chinese": "莫等闲，白了少年头，空悲切。",
+    "english": "Do not idle away your youth; regret grows when hair turns white.",
+    "category": "classic-poetry",
+    "id": 93
+  },
+  {
+    "chinese": "咬定青山不放松，立根原在破岩中。",
+    "english": "Grip the green mountain without letting go; your roots lie deep in solid rock.",
+    "category": "classic-poetry",
+    "id": 94
+  },
+  {
+    "chinese": "千磨万击还坚劲，任尔东西南北风。",
+    "english": "After thousands of grindings and hammerings, it remains firm; let the winds blow from every quarter.",
+    "category": "classic-poetry",
+    "id": 95
+  },
+  {
+    "chinese": "沉舟侧畔千帆过，病树前头万木春。",
+    "english": "Beside the sunken ship a thousand sails pass by; before the dying tree ten thousand trees spring to life.",
+    "category": "classic-poetry",
+    "id": 96
+  },
+  {
+    "chinese": "不经一番寒彻骨，怎得梅花扑鼻香。",
+    "english": "Without bone‑chilling cold, how could the plum blossom's fragrance be so piercing?",
+    "category": "classic-poetry",
+    "id": 97
+  },
+  {
+    "chinese": "天生我材必有用，千金散尽还复来。",
+    "english": "Heaven made me for a purpose; squandered gold will return again.",
+    "category": "classic-poetry",
+    "id": 98
+  },
+  {
+    "chinese": "冰冻三尺，非一日之寒。",
+"english": "It takes more than one cold day for a river to freeze three feet deep.",
+"category": "perseverance",
+    "id": 99
+  },
+  {
+    "chinese": "生当作人杰，死亦为鬼雄。",
+    "english": "Alive, be a hero among men; dead, be a hero among spirits.",
+    "category": "classic-poetry",
+    "id": 100
+  },
+  {
+    "chinese": "不畏浮云遮望眼，自缘身在最高层。",
+    "english": "Fear not the drifting clouds that dim your sight, for you stand on the highest height.",
+    "category": "classic-poetry",
+    "id": 101
+  },
+  {
+    "chinese": "老骥伏枥，志在千里；烈士暮年，壮心不已。",
+    "english": "Though the old steed is stabled, it still aims for a thousand miles; heroes, even in twilight, keep their lofty hearts.",
+    "category": "classic-poetry",
+    "id": 102
+  },
+  {
+    "chinese": "男儿何不带吴钩，收取关山五十州。",
+    "english": "Why should a man not gird his sword to reclaim the lost lands of fifty prefectures?",
+    "category": "classic-poetry",
+    "id": 103
+  },
+  {
+   "chinese": "读万卷书，行万里路。",
+"english": "Read ten thousand books and travel ten thousand miles.",
+"category": "experience",
+    "id": 104
+  },
+  {
+    "chinese": "温故而知新，可以为师矣。",
+    "english": "Reviewing the old as a means of realizing the new, one can be a teacher.",
+    "category": "learning",
+    "id": 105
+  },
+  {
+    "chinese": "青，取之于蓝而青于蓝；冰，水为之而寒于水。",
+    "english": "Indigo comes from the blue plant yet is bluer than blue; ice is made of water yet colder than water.",
+    "category": "classic-poetry",
+    "id": 106
+  },
+  {
+    "chinese": "千淘万漉虽辛苦，吹尽狂沙始到金。",
+    "english": "However arduous the countless siftings, only after the wild sand is blown away does gold emerge.",
+    "category": "classic-poetry",
+    "id": 107
+  },
+  {
+    "chinese": "路转峰回，云开见月明。",
+    "english": "After winding paths and turning peaks, the clouds part and the moon shines bright.",
+    "category": "classic-poetry",
+    "id": 108
+  }
+]

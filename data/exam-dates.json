@@ -1,0 +1,106 @@
+{
+  "default": {
+    "date": "2026-06-07T09:00:00+08:00",
+    "name": "全国统一高考",
+    "description": "2026年全国普通高等学校招生统一考试"
+  },
+  "provinces": {
+    "beijing": {
+      "date": "2026-06-07T09:00:00+08:00",
+      "name": "北京高考",
+      "description": "北京市普通高等学校招生统一考试"
+    },
+    "shanghai": {
+      "date": "2026-06-07T09:00:00+08:00",
+      "name": "上海高考",
+      "description": "上海市普通高等学校招生统一考试"
+    },
+    "guangdong": {
+      "date": "2026-06-07T09:00:00+08:00",
+      "name": "广东高考",
+      "description": "广东省普通高等学校招生统一考试"
+    },
+    "jiangsu": {
+      "date": "2026-06-07T09:00:00+08:00",
+      "name": "江苏高考",
+      "description": "江苏省普通高等学校招生统一考试"
+    },
+    "zhejiang": {
+      "date": "2026-06-07T09:00:00+08:00",
+      "name": "浙江高考",
+      "description": "浙江省普通高等学校招生统一考试"
+    },
+    "shandong": {
+      "date": "2026-06-07T09:00:00+08:00",
+      "name": "山东高考",
+      "description": "山东省普通高等学校招生统一考试"
+    },
+    "hubei": {
+      "date": "2026-06-07T09:00:00+08:00",
+      "name": "湖北高考",
+      "description": "湖北省普通高等学校招生统一考试"
+    },
+    "hunan": {
+      "date": "2026-06-07T09:00:00+08:00",
+      "name": "湖南高考",
+      "description": "湖南省普通高等学校招生统一考试"
+    },
+    "sichuan": {
+      "date": "2026-06-07T09:00:00+08:00",
+      "name": "四川高考",
+      "description": "四川省普通高等学校招生统一考试"
+    },
+    "henan": {
+      "date": "2026-06-07T09:00:00+08:00",
+      "name": "河南高考",
+      "description": "河南省普通高等学校招生统一考试"
+    }
+  },
+  "subjects": [
+    {
+      "name": "语文",
+      "english": "Chinese",
+      "duration": 150
+    },
+    {
+      "name": "数学",
+      "english": "Mathematics",
+      "duration": 120
+    },
+    {
+      "name": "外语",
+      "english": "Foreign Language",
+      "duration": 120
+    },
+    {
+      "name": "物理",
+      "english": "Physics",
+      "duration": 90
+    },
+    {
+      "name": "化学",
+      "english": "Chemistry",
+      "duration": 90
+    },
+    {
+      "name": "生物",
+      "english": "Biology",
+      "duration": 90
+    },
+    {
+      "name": "历史",
+      "english": "History",
+      "duration": 90
+    },
+    {
+      "name": "地理",
+      "english": "Geography",
+      "duration": 90
+    },
+    {
+      "name": "政治",
+      "english": "Politics",
+      "duration": 90
+    }
+  ]
+}
